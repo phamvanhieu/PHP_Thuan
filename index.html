@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Web Bán Hàng</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="https://v1study.com/favicon.ico">
+    <!-- Bootstrap Core CSS -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner-top">
+            <div id="top">Back to Top</div>
+            <img class="img-responsive" src="public/image/1/banner-top.jpg" alt="">
+        </div>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="left-header-top">
+                            Đồ Án Web Bán Hàng Công Nghệ - Nhóm 1
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-header-top">
+                            <ul>
+                                <a href="profile.php" title="User"><span class="account">
+                                        <li><i class="fa fa-user"></i> Van Hieu</a> -<a title="Đăng Xuất" href="logout.php" style="font-size:0.9em">Đăng Xuất</a>
+                                </li>
+                                </span>
+                                <span class="login-logout">
+                                    <li><a title="Đăng nhập" href="login.php"><i class="fa fa-user"></i> Đăng nhập</a>
+                                    </li>
+                                    <li><a title="Đăng kí" href="register.php"><i class="fa fa-lock"></i> Đăng kí</a>
+                                    </li>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.php" title="logo"><img class="img-responsive" src="public/image/1/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <form action="search.php" method="get">
+                                <input required value="" class="form-control" name="search" type="text" placeholder="Tìm kiếm SP... "><span><button class="fas fa-search" type="submit"></button></span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="cart">
+                            <a href="cart.php" title="Giỏ Hàng">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Giỏ Hàng</span>
+                            </a>
+                            <div class="cart-product">
+                                <!-- <p>không có sản phẩm nào</p> -->
+                                <!-- <div class="product-cart">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img class="img-responsive" src="public/image/1/1.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span style="font-size: 0.9em"> <b>Thắt Lưng Nam Sang Chảnh</b> </span>
+                                            <div>SL: 1 </div>
+                                            <div>Giá: 120.000 đ</div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img class="img-responsive" src="public/image/1/1.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <span style="font-size: 0.9em"><b>Thắt Lưng Nam Sang Chảnh</b></span>
+                                            <div>SL: 1</div>
+                                            <div>Giá: 120.000 đ</div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <b>Số Lượng: </b>12<br>
+                                    <b>Tổng Tiền: </b>1200.000 đ
+                                    <hr>
+                                    <center>
+                                        <div class="btn btn-success"><a href="#"> Xem Giỏ Hàng</a></div>
+                                    </center>
+
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="category" id="cate">
+                            <i class="fas fa-bars"></i> Danh Mục Sản Phẩm
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="" class="bb">
+                                        <i class="fas fa-dumbbell"></i>
+                                        CateName </a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="">
+                                                ManuName
+                                            </a>
+                                        </li>
+                                        <br>
+                                    </ul>
+                                </li>
+                                <li><a href="info.php" id="home"><i class="fas fa-home"></i> Giới Thiệu</a>
+                                </li>
+                                <!-- <li><a href="#"><i class="fab fa-hotjar"></i> bán chạy</a></li> -->
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner-category">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-3" id="category">
+                    <div class="category-left">
+                        <div class="item-category">
+
+                            <a href=""><i class="fa fa-male"></i>CateName</a>
+
+                        </div>
+                        <div class="item-category">
+                            <a href="info.php"><i class="fas fa-ad"></i> Giới Thiệu </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <img style="margin-top:30px;" height="398px" width="100%" src="./public/image/1/banner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <div class="new-product">
+                        <div class="col-md-12">
+                            <div class="san-pham">
+                                <span>Sản Phẩm Hot</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="product">
+                                <center>
+                                    <div class="product-image">
+                                        <a href="detail.php?id_product=<?php echo $value_hot_product['id'] ?>"><img
+                                            style="height:180px;width:180px"
+                                            src="public/image/<?php echo $value_hot_product['image'] ?>"
+                                            alt="image-product"></a>
+                                    </div>
+                                </center>
+                                <div class="info-product">
+                                    <div class="product-name">
+                                        <a href="detail.php?id_product=<?php echo $value_hot_product['id'] ?>">
+                                            <b>
+                                            <marquee>Tên Sản Phẩm</marquee>
+                                        </b>
+                                        </a>
+                                    </div>
+                                    <div class="product-price">
+                                        <div><b>Giá Bán:</b> <s> 15.000 đ</s>
+                                        </div>
+                                        <div><b>Giá KM:</b> <b style="color: #FF5622;"> 14.000 đ</b>
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <a class="btn btn-info btn-sm" href="">Mua Hàng</a>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <div class="new-product">
+                        <div class="col-md-12">
+                            <div class="san-pham">
+                                <span>Sản Phẩm Mới</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="product">
+                                <center>
+                                    <div class="product-image">
+                                        <a href="detail.php?id_product=<?php echo $value_hot_product['id'] ?>"><img
+                                            style="height:180px;width:180px"
+                                            src="public/image/<?php echo $value_hot_product['image'] ?>"
+                                            alt="image-product"></a>
+                                    </div>
+                                </center>
+                                <div class="info-product">
+                                    <div class="product-name">
+                                        <a href="detail.php?id_product=<?php echo $value_hot_product['id'] ?>">
+                                            <b>
+                                            <marquee>Ten San Pham</marquee>
+                                        </b>
+                                        </a>
+                                    </div>
+                                    <div class="product-price">
+                                        <div><b>Giá Bán:</b> <s>15.000 đ</s>
+                                        </div>
+                                        <div><b>Giá KM:</b> <b style="color: #FF5622;">14.000 đ</b>
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <a class="btn btn-info btn-sm" href="cart.php?id_product=<?php echo $value_hot_product['id'] ?>">Mua Hàng</a>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div clss="content">
+        <div class="container">
+            <div class="value_new_product">
+                <div class="content">
+                    <div class="all-product">
+                        <div class="col-md-12">
+                            <div class="san-pham">
+                                <span>Tất Cả Sản Phẩm</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-3">
+
+                            <div class="product">
+                                <center>
+                                    <div class="product-image">
+                                        <a href="detail.php?id_product=<?php echo $value_new_product['id'] ?>"><img
+                                            style="width:100%"
+                                            src="public/image/<?php echo $value_new_product['image'] ?>"
+                                            alt="image-product"></a>
+                                    </div>
+                                </center>
+                                <div class="info-product">
+                                    <div class="product-name">
+                                        <a href="detail.php?id_product=<?php echo $value_new_product['id'] ?>">
+                                            <b>
+                                            <marquee>Tên Sản Phẩm</marquee>
+                                        </b>
+                                        </a>
+                                    </div>
+                                    <div class="product-price">
+                                        <div><b>Giá Bán:</b> <s> 15.000 đ</s>
+                                        </div>
+                                        <div><b>Giá KM:</b> <b style="color: #FF5622;">14.000 đ</b>
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <div class="product-btn">
+                                            <a class="btn btn-info btn-sm" href="cart.php?id_product=<?php echo $value_new_product['id'] ?>">Mua
+                                            Hàng</a>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bot-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <center style="margin-bottom: 20px;">
+                            <h3 style="margin-top:0px!important">Thông Tin Nhóm 1</h3>
+                        </center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        Tên: Phạm Văn Hiệu
+                        <br> Email: vanhieutdc6@gmail.com
+                        <br> MSSV: 18211TT0435
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        Tên: Huỳnh Đại Long
+                        <br> Email: huynhdailong.tdc2018@gmail.com
+                        <br> MSSV: 18211TT1949
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        Tên: Nguyễn Đức Duy
+                        <br> Email: nguyenducduy0220@gmail.com
+                        <br> MSSV: 18211TT1924
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="public/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#top').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>
